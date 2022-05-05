@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://qifanyang.com/sitemap/sitemap-index.xml
+Host: https://qifanyang.com
