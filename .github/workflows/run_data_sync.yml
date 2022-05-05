@@ -21,7 +21,11 @@ on:
 
 env:
   # please change to your own config.
+<<<<<<< HEAD
   RUN_TYPE: nike_to_strava # support strava/nike/garmin/garmin_cn/keep/only_gpx/nike_to_strava/strava_to_garmin/strava_to_garmin_cn/garmin_to_strava/garmin_to_strava_cn, Please change the 'pass' it to your own
+=======
+  RUN_TYPE: nike # support strava/nike/garmin/garmin_cn/keep/only_gpx/nike_to_strava/strava_to_garmin/strava_to_garmin_cn, Please change the 'pass' it to your own
+>>>>>>> e5a0d25 (target run type)
   ATHLETE: underwindfall
   TITLE: Workouts
   MIN_GRID_DISTANCE: 3 # change min distance here
