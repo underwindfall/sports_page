@@ -8,6 +8,7 @@ const MUNICIPALITY_CITIES_ARR = [
   '重庆市',
   '香港特别行政区',
   '澳门特别行政区',
+  '巴黎市',
 ];
 
 // styling: set to `true` if you want dash-line route
@@ -18,7 +19,7 @@ const LINE_OPACITY = 0.4;
 const MAP_HEIGHT = 600;
 
 // IF you outside China please make sure IS_CHINESE = false
-const IS_CHINESE = true;
+const IS_CHINESE = false;
 const USE_ANIMATION_FOR_GRID = false;
 const CHINESE_INFO_MESSAGE = (yearLength, year) =>
   `户外运动 ${yearLength} 年 ` + ( year === 'Total' ? '' : `，地图展示的是 ${year} 年的轨迹`);
