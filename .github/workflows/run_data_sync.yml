@@ -21,11 +21,7 @@ on:
 
 env:
   # please change to your own config.
-<<<<<<< HEAD
   RUN_TYPE: nike_to_strava # support strava/nike/garmin/garmin_cn/keep/only_gpx/nike_to_strava/strava_to_garmin/strava_to_garmin_cn/garmin_to_strava/garmin_to_strava_cn, Please change the 'pass' it to your own
-=======
-  RUN_TYPE: nike # support strava/nike/garmin/garmin_cn/keep/only_gpx/nike_to_strava/strava_to_garmin/strava_to_garmin_cn, Please change the 'pass' it to your own
->>>>>>> e5a0d25 (target run type)
   ATHLETE: underwindfall
   TITLE: Workouts
   MIN_GRID_DISTANCE: 3 # change min distance here
@@ -129,9 +125,11 @@ jobs:
           python scripts/gen_svg.py --from-db --type circular --use-localtime
           python scripts/gen_svg.py --from-db --year $(date +"%Y")  --language zh_CN --title "$(date +"%Y") Workouts" --type github --athlete "${{ env.ATHLETE }}" --special-distance 10 --special-distance2 20 --special-color yellow --special-color2 red --output assets/github_$(date +"%Y").svg --use-localtime --min-distance 0.5
 
-      - name: Push new runs
-        run: |
-          git config --local user.email "${{ env.GITHUB_EMAIL }}"
-          git config --local user.name "${{ env.GITHUB_NAME }}"
-          git commit -a -m 'Add new workouts' || echo "nothing to commit"
-          git push || echo "nothing to push"
+      - name: Commit and push if changed
+        run: |-
+          git config --global user.email "actions@users.noreply.github.com"
+          git config --global user.name "README wall-e"
+          git add -A
+          git commit -m "Updated content" || exit 0
+          git push
+
