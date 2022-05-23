@@ -118,5 +118,20 @@
 "average_speed": 1.146,
 "source": "strava",
 "streak": 1
+},
+{
+"run_id": 7182294237,
+"name": "\u6668\u95f4\u884c\u8d70",
+"distance": 1649.1,
+"moving_time": "0:21:40",
+"type": "Hike",
+"start_date": "2022-05-22 06:18:58+00:00",
+"start_date_local": "2022-05-22 08:18:58",
+"location_country": "Ciga Chic, Rue de Vaugirard, Quartier Necker, Paris 15e Arrondissement, Paris, \u00cele-de-France, France m\u00e9tropolitaine, 75015, France",
+"summary_polyline": "{wbiHiccM`@_@BFMXAT@^DRAJLHBZFNLp@DJDZDNDFNj@B\\BB?BBLBZDLHNV~@N^A`@XnA@\\HPLf@Ff@Zz@Df@FFJd@?EDh@ZfA@l@BHCJKFAFAFBFCDBBAJZh@LFF??CB@HN?`@FHF`@JVJPF\\N`@DF?JDD@b@Hv@Z`AJt@FV?LFNAHHPDd@LRHr@ADBR@HJRAPJFFPL??EBNDHA`@BXPp@?^HLBPLLAB@CBD@FD`@CVFF?FHRHl@DJADCAAFF`@FFJp@BFDVFHDRHLBFB?DHD^FFADJf@?HEDGn@@@Tp@DBNT?NL\\B@CG?@@AA?VfBR\\BRLd@Zt@b@zA^j@L^DFLh@PRLh@Xf@J\\Pd@D@DDL`@HFP^@JDDHj@Vj@@HDFFVJDPC@IDFF@KODHCBAA",
+"average_heartrate": null,
+"average_speed": 1.269,
+"source": "strava",
+"streak": 2
 }
 ]
