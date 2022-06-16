@@ -163,5 +163,35 @@
 "average_speed": 1.244,
 "source": "strava",
 "streak": 1
+},
+{
+"run_id": 7312676062,
+"name": "\u508d\u665a\u884c\u8d70",
+"distance": 2137.4,
+"moving_time": "0:34:10",
+"type": "Hike",
+"start_date": "2022-06-15 11:20:05+00:00",
+"start_date_local": "2022-06-15 19:20:05",
+"location_country": "\u6da7\u4e1c\u8def\u884c\u7f72\u8def\u53e3, \u6da7\u4e1c\u8def, \u738b\u57ce\u8def\u8857\u9053, \u897f\u5de5\u533a, \u6cb3\u5357\u7701, 471000, \u4e2d\u56fd",
+"summary_polyline": "sdqrEmtcmTAOUsAYaAISFE\\BTSHCD@HAj@[JAROJAl@[B?n@Wb@Yd@OPOXIb@Y`@MHBJKOq@eAgDo@gCGc@Wm@[oA?I",
+"average_heartrate": 86.5,
+"average_speed": 1.043,
+"source": "strava",
+"streak": 2
+},
+{
+"run_id": 7315779033,
+"name": "\u6668\u95f4\u8dd1\u6b65",
+"distance": 2322.4,
+"moving_time": "0:16:35",
+"type": "Run",
+"start_date": "2022-06-15 23:27:54+00:00",
+"start_date_local": "2022-06-16 07:27:54",
+"location_country": "\u4e5d\u90fd\u8def, \u738b\u57ce\u8def\u8857\u9053, \u897f\u5de5\u533a, \u6cb3\u5357\u7701, 471000, \u4e2d\u56fd",
+"summary_polyline": "qzorEufemTrAq@`@G`@QnASPGbAk@nLmElCoAZMj@EAGBG\\QPAPFTODGHETDX@^IJFZt@DRAJEJ?FLZDf@Nj@F^d@z@ET@FNRZn@d@r@vBlEn@bAx@jB\\d@Nb@LEBUR]?a@@CDABBNXDDZQg@{@GSEc@IWUg@o@oA",
+"average_heartrate": 155.9,
+"average_speed": 2.334,
+"source": "strava",
+"streak": 3
 }
 ]
