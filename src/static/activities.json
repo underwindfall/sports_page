@@ -283,5 +283,20 @@
 "average_speed": 1.964,
 "source": "strava",
 "streak": 2
+},
+{
+"run_id": 7418746168,
+"name": "\u508d\u665a\u884c\u8d70",
+"distance": 5287.3,
+"moving_time": "1:19:30",
+"type": "Hike",
+"start_date": "2022-07-05 10:44:30+00:00",
+"start_date_local": "2022-07-05 18:44:30",
+"location_country": "\u4e5d\u90fd\u8def\u738b\u57ce\u5927\u9053\u53e3\u897f, \u4e5d\u90fd\u8def, \u738b\u57ce\u8def\u8857\u9053, \u897f\u5de5\u533a, \u6cb3\u5357\u7701, 471000, \u4e2d\u56fd",
+"summary_polyline": "gdprEatdmTWOWAUFIDCH?N\\nAj@pCZhAxBvHj@xAZ`AAPIL[T_@T}D~AgAh@gDpAqAj@QDKAYe@D`@ARIPQL_Bv@qBjAkAf@kBp@_Af@qAb@sAl@iAn@oBx@aClAMLKBKAGIk@aBm@iAaA}C[sAs@oB_A}A_@i@MIMCM@SD}BnAOLIP?PRdANf@Xl@`AnAZ|@^z@LF^@HF?N[t@@Pr@n@^n@t@fBF^BZAx@QjADLBXAFEJKHULeATk@BoAEm@FSFIHK^Ht@JZLJJBR@\\Cj@Qx@e@z@aATk@h@g@PSJWZgAVa@JKp@U`@Ub@g@FOBOCY[s@o@sBi@aAe@eAy@eDe@gAW{@kAiBCAODUTETRhARt@CnALn@HFNDd@M\\?PF^VNBLJPXb@lAj@dA\\hAVp@JLN@LERQz@Y|CsAvC{Ar@UjAm@t@Sz@_@~@[dAk@t@k@r@a@xAa@xAi@~Ay@lAa@fAk@`C}@j@WRSBe@FK`Ag@LKFO@QGYOg@Wm@",
+"average_heartrate": 89.1,
+"average_speed": 1.108,
+"source": "strava",
+"streak": 1
 }
 ]
