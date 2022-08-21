@@ -48,7 +48,7 @@ jobs:
           cp -r assets/ public/static
 
       - name: GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v2.2.0
+        uses: crazy-max/ghaction-github-pages@v3
         with:
           # Git branch where site will be deployed
           target_branch: gh-pages
@@ -61,4 +61,4 @@ jobs:
           # Prevent Jekyll from building the site
           jekyll: false
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
