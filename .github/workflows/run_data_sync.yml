@@ -117,6 +117,16 @@ jobs:
         run: |
           python scripts/garmin_to_strava_sync.py ${{ secrets.STRAVA_CLIENT_ID }} ${{ secrets.STRAVA_CLIENT_SECRET }} ${{ secrets.STRAVA_CLIENT_REFRESH_TOKEN }}  ${{ secrets.GARMIN_EMAIL }} ${{ secrets.GARMIN_PASSWORD }}
 
+      - name: Run sync Garmin-cn to Strava(Run with Garmin data backup in Strava)
+        if: env.RUN_TYPE == 'garmin_to_strava_cn'
+        run: |
+          python scripts/garmin_to_strava_sync.py ${{ secrets.STRAVA_CLIENT_ID }} ${{ secrets.STRAVA_CLIENT_SECRET }} ${{ secrets.STRAVA_CLIENT_REFRESH_TOKEN }}  ${{ secrets.GRAMIN_CN_EMAIL }} ${{ secrets.GARMIN_CN_PASSWORD }} --is-cn
+
+      - name: Run sync Garmin to Strava(Run with Garmin data backup in Strava)
+        if: env.RUN_TYPE == 'garmin_to_strava'
+        run: |
+          python scripts/garmin_to_strava_sync.py ${{ secrets.STRAVA_CLIENT_ID }} ${{ secrets.STRAVA_CLIENT_SECRET }} ${{ secrets.STRAVA_CLIENT_REFRESH_TOKEN }}  ${{ secrets.GRAMIN_EMAIL }} ${{ secrets.GARMIN_PASSWORD }}
+
       - name: Make svg GitHub profile
         if: env.RUN_TYPE != 'pass'
         run: |
@@ -125,11 +135,10 @@ jobs:
           python scripts/gen_svg.py --from-db --type circular --use-localtime
           python scripts/gen_svg.py --from-db --year $(date +"%Y")  --language zh_CN --title "$(date +"%Y") Workouts" --type github --athlete "${{ env.ATHLETE }}" --special-distance 10 --special-distance2 20 --special-color yellow --special-color2 red --output assets/github_$(date +"%Y").svg --use-localtime --min-distance 0.5
 
-      - name: Commit and push if changed
-        run: |-
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add -A
-          git commit -m "Updated content" || exit 0
-          git push
-
+      - name: Push new runs
+        run: |
+          git config --local user.email "${{ env.GITHUB_EMAIL }}"
+          git config --local user.name "${{ env.GITHUB_NAME }}"
+          git add .
+          git commit -m 'Add new workouts' || echo "nothing to commit"
+          git push || echo "nothing to push"
