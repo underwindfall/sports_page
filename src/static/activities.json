@@ -628,5 +628,20 @@
 "average_speed": 1.929,
 "source": "strava",
 "streak": 2
+},
+{
+"run_id": 7940898098,
+"name": "\u508d\u665a\u8dd1\u6b65",
+"distance": 4016.2,
+"moving_time": "0:37:08",
+"type": "Run",
+"start_date": "2022-10-10 11:17:21+00:00",
+"start_date_local": "2022-10-10 19:17:21",
+"location_country": "\u6b63\u73af\u8def, \u5949\u8d24\u533a, \u4e0a\u6d77\u5e02, 201400, \u4e2d\u56fd",
+"summary_polyline": "ekt{DovkdVf@AXCb@?l@Sh@Ir@Wl@a@FIFi@Ba@OcAQaC[}B?{@m@{CMg@Go@Mu@k@sA?Q@MTe@GgAYeA_@kD]qBWs@IKQA]Ls@LS?O^a@d@OFUCYMUGQCGBYTw@h@WHGAWMMOOIMAk@LEAGIUBOAGICUAo@E]EPKHUH}AVkAHUDWNYd@KHKD_@D{@?YBWH_@Pe@LKASk@OEQCwD~@]DEEI[SqAUgCQuAEq@Mm@[eCOq@MsA@[Oq@@o@@\\ZtAHt@?d@H\\QY^~@ZdALJLFbANj@AzA[V?LFHLD`@d@fBf@jCFPHFLBXERDdAQ\\Bn@QrAg@dAWhB[F?FFJ\\DVF~AVr@v@rDDFRLJNNhATz@@ZIjA?lA@j@GdFDdBCpB@p@",
+"average_heartrate": 123.4,
+"average_speed": 1.803,
+"source": "strava",
+"streak": 1
 }
 ]
