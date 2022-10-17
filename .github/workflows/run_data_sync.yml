@@ -137,8 +137,8 @@ jobs:
 
       - name: Push new runs
         run: |
-          git config --local user.email "${{ env.GITHUB_EMAIL }}"
-          git config --local user.name "${{ env.GITHUB_NAME }}"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
           git add .
           git commit -m 'Add new workouts' || echo "nothing to commit"
           git push || echo "nothing to push"
