@@ -44,6 +44,7 @@ const ROWING_TITLE = IS_CHINESE ? '划船' : 'Rowing';
 const KAYAKING_TITLE = IS_CHINESE ? '皮划艇' : 'Kayaking';
 const ROAD_TRIP_TITLE = IS_CHINESE ? '自驾' : 'RoadTrip';
 const FLIGHT_TITLE = IS_CHINESE ? '飞行' : 'Flight';
+const WORKOUT_TITLE = IS_CHINESE ? '健身' : 'Workout';
 
 const RUN_TITLES = {
   FULL_MARATHON_RUN_TITLE,
@@ -57,6 +58,7 @@ const RUN_TITLES = {
   KAYAKING_TITLE,
   SWIM_TITLE,
   ROAD_TRIP_TITLE,
+  WORKOUT_TITLE,
   FLIGHT_TITLE,
 };
 
@@ -75,6 +77,7 @@ export {
 };
 
 const nike = 'rgb(224,237,94)';
+const orange = 'rgb(255,180,0)';
 const yellow = 'rgb(224,237,94)';
 const green = 'rgb(0,237,94)';
 const pink = 'rgb(237,85,219)';
@@ -88,6 +91,7 @@ const red = 'rgb(255,0,0)';//大红色
 
 // If your map has an offset please change this line
 // issues #92 and #198
+export const WORKOUT_COLOR = orange;
 export const NEED_FIX_MAP = false;
 export const MAIN_COLOR = green;
 export const RUN_COLOR = yellow;

@@ -27,6 +27,30 @@ BASE_TIMEZONE = "Asia/Shanghai"
 start_point = namedtuple("start_point", "lat lon")
 run_map = namedtuple("polyline", "summary_polyline")
 
+TYPE_DICT = {
+    "running": "Run",
+    "RUN": "Run",
+    "Run": "Run",
+    "VirtualRun": "Run",
+    "cycling": "Ride",
+    "CYCLING": "Ride",
+    "Ride": "Ride",
+    "VirtualRide": "VirtualRide",
+    "indoor_cycling": "Indoor Ride",
+    "walking": "Hike",
+    "hiking": "Hike",
+    "Walk": "Hike",
+    "Hike": "Hike",
+    "Swim": "Swim",
+    "rowing": "Rowing",
+    "RoadTrip": "RoadTrip",
+    "flight": "Flight",
+    "Workout": "Workout",
+}
+
+MAPPING_TYPE = ["Hike", "Ride", "VirtualRide", "Rowing", "Run", "Swim", "RoadTrip", "Workout"]
+
+
 try:
     with open("config.yaml") as f:
         _config = yaml.safe_load(f)
@@ -65,6 +89,7 @@ TYPE_DICT = {
     "RoadTrip": "RoadTrip",
     "flight": "Flight",
     "kayaking": "Kayaking",
+    "Workout": "Workout",
 }
 
 MAPPING_TYPE = [
@@ -76,6 +101,7 @@ MAPPING_TYPE = [
     "Swim",
     "RoadTrip",
     "Kayaking",
+    "Workout"
 ]
 
 STRAVA_GARMIN_TYPE_DICT = {
