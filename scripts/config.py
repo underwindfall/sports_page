@@ -48,7 +48,16 @@ TYPE_DICT = {
     "Workout": "Workout",
 }
 
-MAPPING_TYPE = ["Hike", "Ride", "VirtualRide", "Rowing", "Run", "Swim", "RoadTrip", "Workout"]
+MAPPING_TYPE = [
+    "Hike",
+    "Ride",
+    "VirtualRide",
+    "Rowing",
+    "Run",
+    "Swim",
+    "RoadTrip",
+    "Workout",
+]
 
 
 try:
