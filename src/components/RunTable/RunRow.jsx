@@ -13,7 +13,9 @@ const RunRow = ({ runs, run, locateActivity, runIndex, setRunIndex }) => {
 
   const type = run.type;
 
-  const runTime = formatRunTime(distance,pace);
+  const moving_time = run.moving_time;
+
+  const runTime = formatRunTime(distance,pace, type, moving_time);
 
   // change click color
   const handleClick = (e, runs, run) => {

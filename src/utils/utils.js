@@ -19,6 +19,7 @@ import {
   KAYAKING_COLOR,
   WORKOUT_COLOR,
 } from './const';
+import { hoursToSeconds } from 'date-fns';
 
 const titleForShow = (run) => {
   const date = run.start_date_local.slice(0, 11);
@@ -40,7 +41,18 @@ const formatPace = (d) => {
   return `${minutes}'${seconds.toFixed(0).toString().padStart(2, '0')}"`;
 };
 
-const formatRunTime = (distance,pace) => {
+const formatRunTime = (distance,pace,type, moving_time) => {
+  if (type == 'Workout') {
+    let hms = moving_time; 
+    const [hours, minutes, seconds] = hms.split(':');
+    if (hours == '0') {
+      return minutes + 'min';
+    }
+    if (minutes == '0') {
+      return seconds + 's';
+    }
+    return '0min';
+  }
   if (Number.isNaN(distance) || Number.isNaN(pace)) {
     return '0min';
   }
