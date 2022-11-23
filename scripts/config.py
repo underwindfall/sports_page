@@ -110,7 +110,7 @@ MAPPING_TYPE = [
     "Swim",
     "RoadTrip",
     "Kayaking",
-    "Workout"
+    "Workout",
 ]
 
 STRAVA_GARMIN_TYPE_DICT = {
