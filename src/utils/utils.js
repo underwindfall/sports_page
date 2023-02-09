@@ -18,6 +18,7 @@ import {
   RUN_COLOR,
   KAYAKING_COLOR,
   WORKOUT_COLOR,
+  SNOWBOARD_COLOR,
 } from './const';
 import { hoursToSeconds } from 'date-fns';
 
@@ -192,6 +193,8 @@ const titleForType = (type) => {
       return RUN_TITLES.KAYAKING_TITLE;
     case 'Workout':
       return RUN_TITLES.WORKOUT_TITLE;  
+    case 'Snowboard':
+      return RUN_TITLES.SNOWBOARD_TITLE;
     default:
       return RUN_TITLES.RUN_TITLE;
   }
@@ -234,6 +237,8 @@ const colorFromType = (workoutType) => {
       return KAYAKING_COLOR;
     case 'Workout':
       return WORKOUT_COLOR;  
+    case 'Snowboard':
+      return SNOWBOARD_COLOR;
     default:
       return MAIN_COLOR;
   }
