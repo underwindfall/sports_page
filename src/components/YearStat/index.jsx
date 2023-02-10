@@ -28,13 +28,13 @@ const YearStat = ({ year, onClick }) => {
 
   runs.forEach((run) => {
     sumDistance += run.distance || 0;
-    if (run.average_speed) {
+    // if (run.average_speed) {
       if(workoutsCounts[run.type]){
         var [oriCount, oriAvgSpd, oriDistance] = workoutsCounts[run.type]
         workoutsCounts[run.type] = [oriCount + 1, oriAvgSpd + run.average_speed, oriDistance + run.distance]
       }else{
         workoutsCounts[run.type] = [1, run.average_speed, run.distance]
-      }
+      // }
     }
     if (run.average_heartrate) {
       heartRate += run.average_heartrate;

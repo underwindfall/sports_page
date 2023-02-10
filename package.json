@@ -2,7 +2,7 @@
   "name": "workouts_page",
   "description": "underwindfall",
   "version": "1.0.0",
-  "author": "Ben Bell <ben_29@live.com>",
+  "author": "underwindfall<yangqifan02@hotmail.com>",
   "dependencies": {
     "@mapbox/mapbox-gl-language": "^1.0.0",
     "@mapbox/polyline": "^1.1.1",
@@ -56,7 +56,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ben-29/workouts_page"
+    "url": "https://github.com/underwindfall/sports_page"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",

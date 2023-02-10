@@ -9,8 +9,8 @@ const WorkoutStat = ({ value, description, pace, className, distance, onClick })
     { pace && (<span className="f1 fw9 i">{ " " +pace}</span>)}
     { pace && (<span className="f3 fw6 i"> Pace</span>)}
 
-    { distance && (<span className="f1 fw9 i">{ " " + distance}</span>)}
-    { distance && (<span className="f3 fw6 i"> KM</span>)}
+    { distance && distance !=0 && (<span className="f1 fw9 i">{ " " + distance}</span>)}
+    { distance && distance !=0 && (<span className="f3 fw6 i"> KM</span>)}
 
   </div>
 );
