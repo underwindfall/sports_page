@@ -1483,5 +1483,20 @@
 "average_speed": 0.0,
 "source": "strava",
 "streak": 1
+},
+{
+"run_id": 8569076216,
+"name": "\u6668\u95f4\u9ad8\u5f3a\u5ea6\u95f4\u6b47\u8bad\u7ec3",
+"distance": 0.0,
+"moving_time": "0:27:04",
+"type": "Workout",
+"start_date": "2023-02-16 04:21:34+00:00",
+"start_date_local": "2023-02-16 04:21:34",
+"location_country": null,
+"summary_polyline": "",
+"average_heartrate": 137.7,
+"average_speed": 0.0,
+"source": "strava",
+"streak": 1
 }
 ]
