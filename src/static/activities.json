@@ -1470,6 +1470,21 @@
 "streak": 1
 },
 {
+"run_id": 8598827367,
+"name": "\u953b\u70bc\uff08\u4e0a\u5348\uff09",
+"distance": 0.0,
+"moving_time": "1:12:05",
+"type": "Workout",
+"start_date": "2023-02-13 04:06:40+00:00",
+"start_date_local": "2023-02-13 04:06:40",
+"location_country": null,
+"summary_polyline": "",
+"average_heartrate": 119.4,
+"average_speed": 0.0,
+"source": "strava",
+"streak": 1
+},
+{
 "run_id": 8557696200,
 "name": "\u953b\u70bc\uff08\u4e0a\u5348\uff09",
 "distance": 0.0,
@@ -1482,7 +1497,7 @@
 "average_heartrate": 124.4,
 "average_speed": 0.0,
 "source": "strava",
-"streak": 1
+"streak": 2
 },
 {
 "run_id": 8569076216,
@@ -1513,5 +1528,20 @@
 "average_speed": 0.0,
 "source": "strava",
 "streak": 2
+},
+{
+"run_id": 8598827205,
+"name": "\u953b\u70bc\uff08\u4e0a\u5348\uff09",
+"distance": 0.0,
+"moving_time": "0:51:02",
+"type": "Workout",
+"start_date": "2023-02-21 04:07:28+00:00",
+"start_date_local": "2023-02-21 04:07:28",
+"location_country": null,
+"summary_polyline": "",
+"average_heartrate": 100.3,
+"average_speed": 0.0,
+"source": "strava",
+"streak": 1
 }
 ]
