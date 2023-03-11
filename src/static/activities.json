@@ -1693,5 +1693,20 @@
 "average_speed": 0.0,
 "source": "strava",
 "streak": 4
+},
+{
+"run_id": 8691142819,
+"name": "\u953b\u70bc\uff08\u4e0a\u5348\uff09",
+"distance": 0.0,
+"moving_time": "0:19:59",
+"type": "Workout",
+"start_date": "2023-03-10 04:21:17+00:00",
+"start_date_local": "2023-03-10 04:21:17",
+"location_country": null,
+"summary_polyline": "",
+"average_heartrate": 112.2,
+"average_speed": 0.0,
+"source": "strava",
+"streak": 5
 }
 ]
