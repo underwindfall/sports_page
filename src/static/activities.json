@@ -1708,5 +1708,35 @@
 "average_speed": 0.0,
 "source": "strava",
 "streak": 5
+},
+{
+"run_id": 8724438407,
+"name": "\u953b\u70bc\uff08\u4e2d\u5348\uff09",
+"distance": 0.0,
+"moving_time": "0:38:35",
+"type": "Workout",
+"start_date": "2023-03-14 04:09:56+00:00",
+"start_date_local": "2023-03-14 12:09:56",
+"location_country": null,
+"summary_polyline": "",
+"average_heartrate": 129.6,
+"average_speed": 0.0,
+"source": "strava",
+"streak": 1
+},
+{
+"run_id": 8724438355,
+"name": "\u953b\u70bc\uff08\u4e2d\u5348\uff09",
+"distance": 0.0,
+"moving_time": "0:20:56",
+"type": "Workout",
+"start_date": "2023-03-15 04:25:20+00:00",
+"start_date_local": "2023-03-15 12:25:20",
+"location_country": null,
+"summary_polyline": "",
+"average_heartrate": 111.1,
+"average_speed": 0.0,
+"source": "strava",
+"streak": 2
 }
 ]
