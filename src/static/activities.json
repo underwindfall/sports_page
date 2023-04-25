@@ -2008,5 +2008,35 @@
 "average_speed": 0.0,
 "source": "strava",
 "streak": 2
+},
+{
+"run_id": 8946671864,
+"name": "\u953b\u70bc\uff08\u4e2d\u5348\uff09",
+"distance": 0.0,
+"moving_time": "0:27:05",
+"type": "Workout",
+"start_date": "2023-04-23 04:10:09+00:00",
+"start_date_local": "2023-04-23 12:10:09",
+"location_country": null,
+"summary_polyline": "",
+"average_heartrate": 99.3,
+"average_speed": 0.0,
+"source": "strava",
+"streak": 1
+},
+{
+"run_id": 8946671853,
+"name": "\u953b\u70bc\uff08\u4e2d\u5348\uff09",
+"distance": 0.0,
+"moving_time": "0:40:15",
+"type": "Workout",
+"start_date": "2023-04-24 04:09:32+00:00",
+"start_date_local": "2023-04-24 12:09:32",
+"location_country": null,
+"summary_polyline": "",
+"average_heartrate": 118.5,
+"average_speed": 0.0,
+"source": "strava",
+"streak": 2
 }
 ]
