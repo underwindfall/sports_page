@@ -1,3 +1,17 @@
+## note1: use v2.0 need change vercel setting from Gatsby to Vite
+
+## note2: 2023.09.26 garmin need secret_string(and in Actions) get `python run_page/garmin_sync.py ${secret_string}` if cn `python run_page/garmin_sync.py ${secret_string} --is-cn`
+
+## note3: 2024.08.19: Added `Elevation Gain` field, If you forked the project before this update, please run the following command:
+
+  - To resolve errors: `sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: activities.elevation_gain`
+  - For old data: To include `Elevation Gain` for past activities, perform a full reimport. 
+  - If you don't have a local environment, set `RUN_TYPE` to `db_updater` in the `.github/workflows/run_data_sync.yml` file once then change back. 
+
+    ```bash
+      python run_page/db_updater.py
+    ```
+
 # [Create a personal workouts home page](http://workouts.ben29.xyz)
 
 ![screenshot](https://user-images.githubusercontent.com/6956444/163125711-24d0ad99-490d-4c04-b89f-5b7fe776eb38.png)
@@ -22,8 +36,11 @@ This project is based on [running_page](https://github.com/yihong0618/running_pa
 
 ### Add Sports Type
 
-- Modify `TYPE_DICT` in `scripts/config.py`
-- Modify `colorFromType` in `src/utils/util.js`
+- Modify `TYPE_DICT` & `MAPPING_TYPE` in `scripts/config.py`
+- Add Type Name and add it into `RUN_TITLES` in `src/utils/const.js`
+- Modify `colorFromType` & `titleForRun` in `src/utils/util.js`
+- see [commit](https://github.com/ben-29/workouts_page/commit/f3a35884d626009d33e05adc76bbc8372498f317)
+- or comment [here](https://github.com/ben-29/workouts_page/issues/20)
 
 ---
 

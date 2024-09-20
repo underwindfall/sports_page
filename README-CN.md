@@ -1,3 +1,17 @@
+## note1: use v2.0 need change vercel setting from Gatsby to Vite
+
+## note2: 2023.09.26 garmin need secret_string(and in Actions) get `python run_page/garmin_sync.py ${secret_string}` if cn `python run_page/garmin_sync.py ${secret_string} --is-cn`
+
+## note3: 2024.08.19: Added `Elevation Gain` field, If you forked the project before this update, please run the following command:
+
+  - To resolve errors: `sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: activities.elevation_gain`
+  - For old data: To include `Elevation Gain` for past activities, perform a full reimport. 
+  - If you don't have a local environment, set `RUN_TYPE` to `db_updater` in the `.github/workflows/run_data_sync.yml` file once then change back. 
+
+    ```bash
+      python run_page/db_updater.py
+    ```
+
 # [打造个人户外运动主页](http://workouts.ben29.xyz)
 
 ![screenshot](https://user-images.githubusercontent.com/6956444/163125711-24d0ad99-490d-4c04-b89f-5b7fe776eb38.png)
@@ -22,9 +36,11 @@
 
 ### 新增运动类型
 
-- 修改 `scripts/config.py`, `TYPE_DICT` 增加类型映射关系
-- 修改 `src/utils/util.js` 里的 `colorFromType`, 增加 case
-
+- 修改 `scripts/config.py`, `TYPE_DICT` 增加类型映射关系, `MAPPING_TYPE` 里增加运动类型
+- 修改 `src/utils/const.js`, 增加类型标题，并加入到 `RUN_TITLES`
+- 修改 `src/utils/util.js` 里的 `colorFromType`, 增加 case 指定颜色; `titleForRun`  增加 case 指定类型标题
+- 参考这个 [commit](https://github.com/ben-29/workouts_page/commit/f3a35884d626009d33e05adc76bbc8372498f317)
+- 或 [留言](https://github.com/ben-29/workouts_page/issues/20)
 ---
 
 ### Codoon（咕咚）
@@ -33,25 +49,25 @@
 <summary>获取您的咕咚数据</summary>
 
 ```python
-python3(python) scripts/codoon_sync.py ${your mobile or email} ${your password}
+python3(python) run_page/codoon_sync.py ${your mobile or email} ${your password}
 ```
 
 示例：
 
 ```python
-python3(python) scripts/codoon_sync.py 13333xxxx xxxx
+python3(python) run_page/codoon_sync.py 13333xxxx xxxx
 ```
 
 > 注：我增加了 Codoon 可以导出 gpx 功能, 执行如下命令，导出的 gpx 会加入到 GPX_OUT 中，方便上传到其它软件
 
 ```python
-python3(python) scripts/codoon_sync.py ${your mobile or email} ${your password} --with-gpx
+python3(python) run_page/codoon_sync.py ${your mobile or email} ${your password} --with-gpx
 ```
 
 示例：
 
 ```python
-python3(python) scripts/codoon_sync.py 13333xxxx xxxx --with-gpx
+python3(python) run_page/codoon_sync.py 13333xxxx xxxx --with-gpx
 ```
 
 > 注：因为登录 token 有过期时间限制，我增加了 refresh_token&user_id 登陆的方式， refresh_token 及 user_id 在您登陆过程中会在控制台打印出来
@@ -61,7 +77,7 @@ python3(python) scripts/codoon_sync.py 13333xxxx xxxx --with-gpx
 示例：
 
 ```python
-python3(python) scripts/codoon_sync.py 54bxxxxxxx fefxxxxx-xxxx-xxxx --from-auth-token
+python3(python) run_page/codoon_sync.py 54bxxxxxxx fefxxxxx-xxxx-xxxx --from-auth-token
 ```
 
 </details>
